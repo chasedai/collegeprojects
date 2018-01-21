@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dai's Motorbikes</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/jquery.dataTables.css" />
+<script src="js/jquery-2.2.1.js"></script>
+<script src="js/jquery.dataTables.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main2.js"></script>
+<style>
+
+/*CSS*/
+div.c-wrapper {
+	width: 50%; /* for example */
+	margin: auto;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	width: 50%; /* use this, or not */
+	margin: auto;
+}
+</style>
+<style>
+div.img {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 180px;
+}
+
+div.img:hover {
+	border: 1px solid #777;
+}
+
+div.img img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+</style>
+
+</head>
+<body
+	style="background: linear-gradient(#ffffff, #cccccc 0%, #ffffff 50%, #cccccc 100%);">
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-12" style="width: auto">
+					<img src="images/Logo.png" alt="Car" height="100" width="100">
+					<span style="font-size: 24px; color: #333333; margin-left: 150px">Welcome
+						to ChaseDai's Motorbikes</span>
+				</div>
+
+				<div class="col-md-3 col-sm-4 col-xs-12" style="float: right">
+					<br>
+					<p>
+						<i class="fa fa-phone"></i><span> Phone</span>+353-087-6620875
+					</p>
+					<p>
+						<i class="fa fa-envelope-o"></i><span> Email</span><a href="#">chasedai@icloud.com</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- start navigation -->
+
+	<ul class="nav nav-tabs" role="tablist">
+		<li class="active"><a href="#about" role="tab" data-toggle="tab">About</a></li>
+		<li><a href="#cars" role="tab" data-toggle="tab">Motorbikes</a></li>
+		<li><a href="#contactus" role="tab" data-toggle="tab">Contact
+				Us</a></li>
+		<li><a href="#gallery" role="tab" data-toggle="tab">Gallery</a></li>
+		<li><a href="#slide" role="tab" data-toggle="tab">Slide</a></li>
+	</ul>
+
+	<!-- end navigation -->
+	<!-- start home -->
+	<div class="tab-content">
+		<div class="tab-pane active" id="about">
+			<h2>Dai's Motorbikes</h2>
+			<center>
+				<p>Situated in the heart of Ireland, Dai's motorbike shop offers
+					unbeatable value with a great selection of bikes</p>
+
+				<p>All our bikes are fully guaranteed. You can expect only the
+					best at our shop and we have a wide range to cater to all tastes!</p>
+
+				<p>Why not have a look at our bikes today in our new state of
+					the art showroom!</p>
+			</center>
+		</div>
+		<div class="tab-pane" id="cars">
+
+			<table id="THETABLE">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Make</th>
+						<th>Year</th>
+						<th>Mileage</th>
+						<th>Colour</th>
+						<th>Engine</th>
+						<th>Details</th>
+						<th>lalal</th>
+					</tr>
+				</thead>
+				<tbody id="tBody"></tbody>
+			</table>
+		</div>
+
+
+		<div class="tab-pane" id="contactus">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="wow bounceIn" data-wow-offset="50"
+							data-wow-delay="0.3s">
+							CONTACT <span>Dai's Motorbikes</span>
+						</h2>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft"
+						data-wow-offset="50" data-wow-delay="0.9s">
+						<form action="#" method="post">
+							<label>NAME</label> <input name="fullname" type="text"
+								class="form-control" id="fullname"> <label>EMAIL</label>
+							<input name="email" type="email" class="form-control" id="email">
+
+							<label>MESSAGE</label>
+							<textarea name="message" rows="4" class="form-control"
+								id="message"></textarea>
+
+							<input type="submit" class="form-control">
+						</form>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight"
+						data-wow-offset="50" data-wow-delay="0.6s">
+						<address>
+							<p class="address-title">OUR ADDRESS</p>
+							<span>Athlone, Westmeath, Ireland</span>
+							<p>Phone: +353-87-6620875</p>
+							<p>Email: chasedai@icloud.com</p>
+							<p>Address: Dublin Road, Athlone, Westmeath, Ireland</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane" id="gallery">
+			<div>
+				<select name="select" id="select_k1" class="xla_k">
+					<option value="all">ALL</option>
+					<option value="YAMAHA">YAMAHA</option>
+					<option value="Honda">Honda</option>
+				</select>
+			</div>
+			<div id="galleryContent">
+				<div class="img">
+					<a href="images/team-img1.jpg"> <img src="images/team-img1.jpg"
+						width="300" height="200">
+					</a>
+				</div>
+
+				<div class="img">
+					<a target="_blank" href="images/team-img2.jpg"> <img
+						src="images/team-img2.jpg" alt="Forest" width="600" height="400">
+					</a>
+					<div class="desc">motor</div>
+				</div>
+
+				<div class="img">
+					<a target="_blank" href="images/team-img3.jpg"> <img
+						src="images/team-img3.jpg" alt="Northern Lights" width="600"
+						height="400">
+					</a>
+					<div class="desc">motor</div>
+				</div>
+
+				<div class="img">
+					<a target="_blank" href="images/team-img4.jpg"> <img
+						src="images/team-img4.jpg" alt="Mountains" width="600"
+						height="400">
+					</a>
+					<div class="desc">motor</div>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane" id="slide">
+			<div class="container">
+
+				<br />
+				<div id="carousel-example-generic" class="carousel slide"
+					data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0"
+							class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+
+						<div class="item active">
+							<img src="images/team-img1.jpg" alt="cars" height="300"
+								width="300">
+
+						</div>
+						<div class="item">
+							<img src="images/team-img2.jpg" alt="cars" height="300"
+								width="300">
+
+						</div>
+						<div class="item">
+							<img src="images/team-img3.jpg" alt="cars" height="300"
+								width="300">
+
+						</div>
+
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic"
+						role="button" data-slide="prev"> <span>&lt;</span>
+					</a> <a class="right carousel-control" href="#carousel-example-generic"
+						role="button" data-slide="next"> <span>&gt;</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end home -->
+
+	<!-- start team -->
+	<section id="team">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+						<span>AWESOME</span> Machine
+					</h2>
+				</div>
+
+				<!--team member begin-->
+
+				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
+					data-wow-offset="50" data-wow-delay="1.3s">
+					<div class="team-wrapper">
+						<img src="images/team-img1.jpg" class="img-responsive"
+							alt="team img 1">
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
+					data-wow-offset="50" data-wow-delay="1.6s">
+					<div class="team-wrapper">
+						<img src="images/team-img2.jpg" class="img-responsive"
+							alt="team img 2">
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
+					data-wow-offset="50" data-wow-delay="1.3s">
+					<div class="team-wrapper">
+						<img src="images/team-img3.jpg" class="img-responsive"
+							alt="team img 3">
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
+					data-wow-offset="50" data-wow-delay="1.6s">
+					<div class="team-wrapper">
+						<img src="images/team-img4.jpg" class="img-responsive"
+							alt="team img 4">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end team -->
+	<!-- end contact -->
+
+	<!-- start copyright -->
+	<footer id="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+						Copyright &copy; 2015 <a href="index.html">ChaseDai</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end copyright -->
+	<!-- DESCRIPTION Modal -->
+
+	<div class="modal fade" id="motorDescription" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Description</h4>
+				</div>
+				<div class="modal-body">
+					<table>
+						<tr>
+							<td style="width: 50%">Description:</td>
+							<td style="width: 50%"><textarea row="70" cols="50"
+									id="description" name="decription"></textarea></td>
+						</tr>
+						<tr>
+							<td style="width: 50%">Picture:</td>
+							<td style="width: 50%"><img id="picture" width=100% /></td>
+						</tr>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- EDIT DETAILS Modal -->
+	<div style="display: none;" class="modal fade" id="motorEdit"
+		role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Edit Details</h4>
+				</div>
+				<div class="modal-body">
+					<p>Edit Details.</p>
+
+					<div class="mainArea">
+						<table>
+							<tr>
+								<th style="width: 50%">Attribute:</th>
+								<th style="width: 50%">Value:</th>
+							</tr>
+							<tr>
+								<td><label>Id:</label></td>
+								<td><input id="motorId" name="motorId" type="text" disabled /></td>
+							</tr>
+							<tr>
+								<td><label>Make:</label></td>
+								<td><input type="text" id="make" name="make" /></td>
+							</tr>
+							<tr>
+								<td><label>year:</label></td>
+								<td><input type="text" id="year" name="year" /></td>
+							</tr>
+							<tr>
+								<td><label>mileage:</label></td>
+								<td><input type="text" id="mileage" name="mileage" /></td>
+							</tr>
+							<tr>
+								<td><label>colour:</label></td>
+								<td><input type="text" id="colour" name="colour" /></td>
+							</tr>
+							<tr>
+								<td><label>engine:</label></td>
+								<td><input type="text" id="engine" name="engine" /></td>
+							</tr>
+							<tr>
+								<td><label>picture:</label></td>
+								<td><input type="text" id="pictureedit" name="picture" /></td>
+							</tr>
+							<tr>
+								<td colspan=2><textarea row="70" cols="50"
+										id="descriptionedit" name="decription"></textarea></td>
+							</tr>
+						</table>
+
+						<div class="modal-footer">
+							<button id="save" name="save" type="button">Save</button>
+							<button id="newmotor" name="newmotor" type="button">New
+								Motor</button>
+							<button id="delete" name="delete" type="button">Delete</button>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+</body>
+</html>
