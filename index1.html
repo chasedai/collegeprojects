@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>A simple HTML CV</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+<body class="loading">
+	<div id="wrapper">
+		<div id="bg"></div>
+		<div id="overlay"></div>
+		<div id="main">
+
+			<!-- Header -->
+			<header id="header">
+				<h1>Qihang Dai</h1>
+				<p>Athlone - Ocotober 19th 2014</p>
+				<nav>
+					<ul>
+						<li><a href="#" class="fa fa-university" title="Academic background" data-toggle="modal" data-target="#academicBG"><span class="label">Academic background</span></a></li>
+						<li><a href="#" class="fa fa-industry" title="Work experience" data-toggle="modal" data-target="#workEXP"><span class="label">Work experience</span></a></li>
+						<li><a href="#" class="fa fa-tasks" title="Projects and skills" data-toggle="modal" data-target="#pSS"><span class="label">Projects and skills</span></a></li>
+						<li><a href="https://www.linkedin.com/in/chasedai/" class="fa fa-linkedin" title="LinkedIn profile"><span class="label">LinkedIn profile</span></a></li>
+						<li><a href="#" class="fa fa-envelope-o" title="Email" data-toggle="modal" data-target="#emailDialog"><span class="label">Email</span></a></li>
+						<li><a href="#" class="fa fa-user" title="My Story" data-toggle="modal" data-target="#mystory"><span class="label">My story</span></a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<span > Not compatible with mobile devices.</span>
+			</footer>
+
+		</div>
+	</div>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script>
+		window.onload = function() { document.body.className = ''; }
+		window.ontouchmove = function() { return false; }
+		window.onorientationchange = function() { document.body.scrollTop = 0; }
+	</script>
+	<!-- Modal -->
+	<div id="pSS" class="modal fade" role="dialog">
+		<div class="modal-dialog" >
+
+			<!-- Modal content-->
+			<div class="modal-content" >
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title" style="color: #000; font-weight: bold;">Projects and Skills</h4>
+				</div>
+				<div class="modal-body" style="color: #000;">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" 
+								href="#webdesign">
+								Web design - 2013
+							</a>
+						</h4>
+					</div>
+					<div id="webdesign" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<img src="assets/images/vipshop.jpg" height="100%" width="100%">
+							<img src="assets/images/netcn.jpg" height="100%" width="100%">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+
+	</div>
+</div>
+<div id="academicBG" class="modal fade" role="dialog">
+	<div class="modal-dialog" style="width: 50%">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title" style="color: #000; font-weight: bold;">Academic background</h4>
+			</div>
+			<div class="modal-body" style="color: #000; ">
+				<table style="width: 100%; ">
+					<!-- first -->
+					<tr>
+						<td>Degree</td>
+						<td>: MSc in Software Engineering</td>
+					</tr>
+					<tr>
+						<td>Duration</td>
+						<td>: 09/2015 - 10/2016</td>
+					</tr>
+					<tr>
+						<td>Institution</td>
+						<td>: Athlone Institute of Technology</td>
+					</tr>
+					<tr>
+						<td colspan="2"><hr></td>
+					</tr>
+					<!-- second -->
+					<tr>
+						<td>Degree</td>
+						<td>: Bachelor's (Hons) in Software Engineering - Second Class Honours, Grade 1</td>
+					</tr>
+					<tr>
+						<td>Duration</td>
+						<td>: 09/2014 - 05/2015</td>
+					</tr>
+					<tr>
+						<td>Institution</td>
+						<td>: Athlone Institute of Technology</td>
+					</tr>
+					<tr>
+						<td>Information</td>
+						<td>: I discovered that ECIT built parternership with AIT and signed up for the programme.</td>
+					</tr>
+					<tr>
+						<td colspan="2"><hr></td>
+					</tr>
+					<!-- third -->
+					<tr>
+						<td>Degree</td>
+						<td>: Bachelor's (Hons) in Software Engineering - First class</td>
+					</tr>
+					<tr>
+						<td>Duration</td>
+						<td>: 09/2011 - 07/2014</td>
+					</tr>
+					<tr>
+						<td>Institution</td>
+						<td>: East China Institute of Technology University</td>
+					</tr>
+					<tr>
+						<td>Information</td>
+						<td>: The university is located in Nanchang, Jiangxi, China.</td>
+					</tr>
+
+				</table>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+
+	</div>
+</div>
+<div id="workEXP" class="modal fade" role="dialog">
+	<div class="modal-dialog" style="width: 75%; height: 100%">
+
+		<!-- Modal content-->
+		<div class="modal-content" >
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title" style="color: #000; font-weight: bold;">Work experience</h4>
+			</div>
+			<div class="modal-body" style="color: #000; height: 1600px ">
+				<ul class="menuUl">
+					<!-- first -->
+					<li style="width: 150px">Job title</li>
+					<li>: Web developer (Part time)</li>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Company</li>
+					<li>: <a href="http://www.rexk.ie">REXK</a></li>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Duration</li>
+					<li>: 11/2017 to Now</li>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Responsbilities</li>
+					<li>: It's a friend's company, I'm helping with their website. No employment involved</li>
+					<p>&nbsp;</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;• Built custom websites based on WordPress</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;• Provided timely resolution to reported problems with existing websites</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;• Used common sense at all times and pay close attention to detail</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;• Committed, enthusiastic, sincere, trustworthy and conscientious</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;• Involved in business strategies and marketing</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;• Designed banner and logo</p>
+					<!-- second -->
+					<p>&nbsp;</p>
+					<li style="width: 150px">Job title</li>
+					<li>: Quality Control Verifier</li>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Company</li>
+					<li>: <a href="http://www.moravia.com">Moravia IT</a></li>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Duration</li>
+					<li>: 09/2017 to 11/2017</li>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Responsbilities</li>
+					<p>: •	Tested linguistic and functional quality before next production phase or final delivery to the customer (both internal and external) for products.</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Maintained defect log process by creating, assigning and closing appropriate reports corresponding to client's standards on JIRA</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Managed relationship with client's in-house Quality Control (QC) counterparts and language localization team members</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Cooperated in creating and improving clear and communicative language terminology</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Monitored local market media customer feedback</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Executed pre-defined quality checks within the estimated times and immediately flag any productivity decrease issues and risks</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Provided feedback for defects implementation and report defects to a defect tracking database</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Participated in project team meetings throughout the product development life cycle</p>
+					<li style="width: 150px">Why left</li>
+					<li>: Because my graduate visa expires and it will take 1-2 weeks until I get a new work permit.</li>
+					<!-- third -->
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Job title</li>
+					<li>: Java/Groovy developer (intern) and Business development</li>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Company</li>
+					<li>: <a href="http://www.yzzb365.com/">Nanjing Yinzhou Finance IT Ltd.</a></li>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Duration</li>
+					<li>: 06/2017 to 08/2017</li>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Responsbilities</li>
+					<p>: •	Built internal financial software system.</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Implemented system features in Groovy/Grails.</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Managed relationship with client's in-house Quality Control (QC) counterparts and language localization team members</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Modified front-end pages based on Bootstrap</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Used SVN for version control</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Travelled in Anhui Province to pick the best city to promote our product.</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Built parternerships with local companies.</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Rented office and built a team.</p>
+					<li style="width: 150px">Why left</li>
+					<li>: They don't pay salary : )</li>
+					<!-- fourth -->
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Job title</li>
+					<li>: Front-end developer (Part time)</li>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Company</li>
+					<li>: <a href="http://www.8d.ie/">Eight Dimension Technology</a></li>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Duration</li>
+					<li>: 04/2016 to 05/2016</li>
+					<p>&nbsp;</p>
+					<li style="width: 150px">Responsbilities</li>
+					<p>: •	Built websites based on Magneto</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Modified Magneto templates</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Designed images for company website</p>
+					<p style="margin-left: 155px">&nbsp;&nbsp;•	Used Git for version control</p>
+					<li style="width: 150px">Why left</li>
+					<li>: Have to finish Master's project at Athlone IT. Notified the company in advance.</li>
+				</ul>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+
+	</div>
+</div>
+<div id="emailDialog" class="modal fade" role="dialog" style="width: 40%; margin: auto;">
+	<div class="modal-dialog" style="width: 50%">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title" style="color: #000; font-weight: bold;">Email</h4>
+			</div>
+			<div class="modal-body" style="color: #000; ">
+				<form method="POST" action="http://formspree.io/chasedai@icloud.com">
+					<ul>
+						<li><input type="email" name="email" placeholder="Your email" style="width: 100%; color: #000"></li>
+						<li><input type="text" name="subject" placeholder="Subject" style="width: 100%; color: #000"></li>
+						<li><textarea name="message" placeholder="Your message" style="width: 100%; color: #000"></textarea></li>	
+						<button type="submit" class="btn btn-primary" >Send</button>
+					</ul>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</div>
+<div id="mystory" class="modal fade" role="dialog">
+	<div class="modal-dialog" style="width: 50%">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title" style="color: #000; font-weight: bold;">My Story</h4>
+			</div>
+			<div class="modal-body" style="color: #000; ">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" 
+							href="#thisPage">
+							About this web page
+						</a>
+					</h4>
+				</div>
+				<div id="thisPage" class="panel-collapse collapse in">
+					<div class="panel-body">
+						I start building this page on 28/11/2017 at 20:00. <br>
+						Everything here is up-to-date.
+						The page is bascially made of Bootstrap.
+						Used two methods for content formatting. &lt;table&gt; and &lt;ul&gt; <br>
+						Email form is supported by <a href="https://formspree.io/">Formspress</a>, very easy to set up.
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" 
+							href="#story2017">
+							About me
+						</a>
+					</h4>
+				</div>
+				<div id="story2017" class="panel-collapse collapse in">
+					<div class="panel-body">
+						I am currently looking for Java/Back-end developer opportunities. <br>
+						Although I only have few expericence connected to front end development. <br>
+						But I know what I love. <br>
+							<!--I learned LOGO when I was 8, I was ready for the national competition but I got transferred suddenly to another school and I missed that opportunity. Life was difficult, the next time I had a chance to play with a computer was 6 years later. I spent all my money on a C programming book, but I couldn't understand how the pointer works, I couldn't understand the computer terms. I could ask no one.<br>
+							That was 10 years ago in China, my family was poor. My parents thought I was wasting time on computer games, they didn't know what I was doing, I didn't know I could have explained.<br> 
+							2 years later, I accidently found a hacker community online. I spent every spare minute on it, I learned a few tricks and wrote a 'shutdown -s' script and tricked classmates to run it. I learned VB 6.0, Delphi 7 and I built my own hacker community which had 1,000 members. That is a memorable time in my life. Some video tutorials I made for people who are interested in VB 6.0 and setting up websites are still available today.<br>
+							After that, I fighted so hard with my family to enroll in Software Engineering. I thought that I can finally do what I love with a bunch of classmates I can learn from. But I was wrong, I was shocked when they asked me how to turn off the laptop.<br>
+							I built some practical applications in the first university year like 百度文库小偷. <br>
+							However, I started a relationship then which ended two years later. I was completely lost for a whole year.<br>
+							But somehow I realised one day that I had been wasting my life, I needed a fresh start. I signed up for the programme to Ireland.<br>
+							Everthing went well at Athlone IT until I started another relaionship last year.<br>-->
+							I learn fast, I believe I am nature.<br>
+							I am not looking for a job but a career, I want to learn, I want to contribute.<br>
+
+						</div>
+					</div>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+</div>
+</div>
+</body>
+</html>
