@@ -1,0 +1,5 @@
+说明文档
+
+需要更改数据库用户名密码成你自己的，创建takeawayrest数据库
+
+数据库连接在connectionBuilder.java里
